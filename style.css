@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(32, 210, 216);
+    color: rgba(102, 104, 105, 0.8); /* Increased opacity for better visibility */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    background-color: #f0f4f8;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+div {
+    padding: 5px;
+    margin: 10px;
+}
+
+h2 {
+    color: indigo;
+    font-weight: bold; /* Corrected the font weight */
+}
+
+/* Container for the skills sections */
+#skills {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap onto the next line if they exceed the width */
+    gap: 15px; /* Adds space between sections */
+    padding: 20px; /* Adds padding around the container */
+    justify-content: center; /* Centers items horizontally */
+}
+
+/* Individual skill section styling */
+#skills section {
+    background-color: #f9f9f9; /* Light gray background for better readability */
+    border: 1px solid #ddd; /* Light border for subtle separation */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    padding: 15px; /* Adds padding inside the section */
+    width: 150px; /* Fixed width for consistency */
+    text-align: center; /* Centers text inside sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for better interactivity */
+#skills section:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow for hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #skills {
+        gap: 10px; /* Reduce gap on smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    #skills section {
+        width: 120px; /* Adjust width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
